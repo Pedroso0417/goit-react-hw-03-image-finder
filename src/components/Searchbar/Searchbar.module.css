@@ -1,0 +1,38 @@
+/* Searchbar.module.css */
+
+.searchbar {
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.button-label {
+  margin-left: 5px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}

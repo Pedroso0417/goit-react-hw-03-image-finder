@@ -1,0 +1,21 @@
+/* Button.module.css */
+
+.load-more {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.load-more:hover {
+  background-color: #2980b9;
+}
+
+.load-more:active {
+  background-color: #216a94;
+}

@@ -1,0 +1,19 @@
+/* ImageGalleryItem.module.css */
+
+.gallery-item {
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
