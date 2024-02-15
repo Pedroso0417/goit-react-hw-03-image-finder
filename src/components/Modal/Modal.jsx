@@ -1,8 +1,10 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import Modal from 'react-modal';
 import css from '.Modal.module.css';
 
- const CustomModal = ({ isOpen, imageUrl, onClose }) => {
+Modal.setAppElement('#root');
+
+const CustomModal = ({ isOpen, imageUrl, onClose }) => {
   return (
     <div className={`overlay ${isOpen ? 'open' : ''}`} onClick={onClose}>
       <div className={css.modal}>
@@ -12,4 +14,9 @@ import css from '.Modal.module.css';
   );
 };
 
+CustomModal.propTypes = {
+  isOpen: PropTypes.func.isRequired,
+  onClose: PropTypes.bool.isRequired,
+  imageUrl: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+};
 export default CustomModal;

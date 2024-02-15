@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { Button } from './Button/Button';
 import { ImageGallery } from './ImageGallery/ImageGallery';
 import { Loader } from './Loader/Loader';
+import { Modal } from './Modal/Modal';
 import { Searchbar } from './Searchbar/Searchbar';
-import Modal from './CustomModal';
+import css from './App.module.css';
 
 class App extends Component {
   constructor(props) {
@@ -87,13 +88,23 @@ class App extends Component {
     const { images, isLoading, selectedImage } = this.state;
 
     return (
-      <div>
-        <Searchbar onSubmit={this.handleSearchSubmit} />
-        <ImageGallery images={images} onImageClick={this.handleImageClick} />
-        {isLoading && <Loader />}
-        {images.length > 0 && <Button onClick={this.handleLoadMore} />}
+      <div className={css.container}>
+        <Searchbar
+          className={css.searchbar}
+          onSubmit={this.handleSearchSubmit}
+        />
+        <ImageGallery
+          className={css.imageGallery}
+          images={images}
+          onImageClick={this.handleImageClick}
+        />
+        {isLoading && <Loader className={css.loader} />}
+        {images.length > 0 && (
+          <Button className={css.button} onClick={this.handleLoadMore} />
+        )}
         {selectedImage && (
           <Modal
+            className={css.modal}
             isOpen={true}
             imageUrl={selectedImage}
             onClose={this.handleCloseModal}

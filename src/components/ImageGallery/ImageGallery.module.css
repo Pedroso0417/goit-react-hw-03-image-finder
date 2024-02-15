@@ -9,14 +9,14 @@
   gap: 10px;
 }
 
-.gallery-item {
+.galleryItem {
   cursor: pointer;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-.gallery-item img {
+.galleryItemImage {
   width: 100%;
   height: auto;
   border-radius: 8px;
