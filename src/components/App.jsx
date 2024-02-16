@@ -52,7 +52,7 @@ class App extends Component {
     });
 
     try {
-      const apiKey = 'your_pixabay_api_key'; // Replace with your actual API key
+      const apiKey = '41732117-59258c5357db5fde0d38d4929'; // Replace with your actual API key
       const perPage = 12;
       const apiUrl = `https://pixabay.com/api/?q=${searchQuery}&page=${currentPage}&key=${apiKey}&image_type=photo&orientation=horizontal&per_page=${perPage}`;
 
@@ -115,4 +115,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export { App };

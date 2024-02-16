@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import Modal from 'react-modal';
-import css from '.Modal.module.css';
+
+import css from './Modal.module.css';
 
 Modal.setAppElement('#root');
 
@@ -15,8 +16,9 @@ const CustomModal = ({ isOpen, imageUrl, onClose }) => {
 };
 
 CustomModal.propTypes = {
-  isOpen: PropTypes.func.isRequired,
-  onClose: PropTypes.bool.isRequired,
+  isOpen: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
+
   imageUrl: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 };
-export default CustomModal;
+export { Modal };
