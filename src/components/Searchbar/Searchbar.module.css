@@ -20,9 +20,9 @@
   border: none;
   padding: 10px;
   cursor: pointer;
-  -webkit-box-shadow: -8px -5px 9px -12px rgba(0,0,0,0.75);
--moz-box-shadow: -8px -5px 9px -12px rgba(0,0,0,0.75);
-box-shadow: -8px -5px 9px -12px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -8px -5px 9px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -8px -5px 9px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: -8px -5px 9px -12px rgba(0, 0, 0, 0.75);
 }
 
 .buttonLabel {
@@ -35,9 +35,9 @@ box-shadow: -8px -5px 9px -12px rgba(0,0,0,0.75);
   font-size: 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  -webkit-box-shadow: -8px -5px 9px -12px rgba(0,0,0,0.75);
--moz-box-shadow: -8px -5px 9px -12px rgba(0,0,0,0.75);
-box-shadow: -8px -5px 9px -12px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -8px -5px 9px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -8px -5px 9px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: -8px -5px 9px -12px rgba(0, 0, 0, 0.75);
 }
 
 .input:focus {

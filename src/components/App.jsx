@@ -105,7 +105,7 @@ class App extends Component {
         {selectedImage && (
           <Modal
             className={css.modal}
-            isOpen={true}
+            isOpen={!!selectedImage} // Use the selectedImage state to manage modal visibility
             imageUrl={selectedImage}
             onClose={this.handleCloseModal}
           />
